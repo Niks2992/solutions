@@ -15,7 +15,7 @@ services:
     volumes:
       - type: bind
         source: ./inputFile
-        target: /csvserver/inputdata*
+        target: ${pwd}/inputdata*
     restart: unless-stopped
     networks:
       - csvserver-net
