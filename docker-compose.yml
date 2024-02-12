@@ -6,10 +6,10 @@ services:
     container_name: csvserver
     env_file:
       - csvserver.env
-    environment:
-      - CSVSERVER_BORDER=${CSVSERVER_BORDER}
-      - CSVSERVER_LISTEN_ADDRESS=${CSVSERVER_LISTEN_ADDRESS}
-      - CSVSERVER_PORT=${CSVSERVER_PORT}
+    # environment:
+    #   - CSVSERVER_BORDER=${CSVSERVER_BORDER}
+    #   - CSVSERVER_LISTEN_ADDRESS=${CSVSERVER_LISTEN_ADDRESS}
+    #   - CSVSERVER_PORT=${CSVSERVER_PORT}
     ports:
       - "9393:9300"
     volumes:
